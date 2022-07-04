@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color:antiquewhite;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color:thistle;
+    overflow: hidden;
+}
+
+#questionAnswer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+#question{
+    width: 60vw;
+    padding: 10px 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+.optionBox{
+    width: 60vw;
+    margin: 5x 0px;
+    padding: 10px 40px;
+    font: 20px;
+    font-family: sans-serif;
+}
+#options > label{
+    /* padding: 20px; */
+    margin: 25px 5px;
+}
+
+#questionAnswer > button{
+    background-color: thistle;
+    padding: 8px 15px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    color:black;
+    border:2px solid aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#questionAnswer > button:hover{
+    background-color: transparent;
+    border: 2px solid thistle;
+}
+
+#scoreBlock{
+    display: none;
+}
+#scoreStatus{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    background-color: cadetblue;
+    color:snow;
+    padding: 10px;
+}
+
+#myscore{
+    padding: 10px;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#scoreStatus > button{
+    background-color: aliceblue;
+    padding: 8px 15px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    color:cadetblue;
+    border:2px solid aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#scoreStatus > button:hover{
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+}
+@media screen and (max-width:796px) {
+    #questionAnswer, #question, .optionBox{
+        width: 80vw;
+    }
+
+    #scoreStatus{
+        width: 60vw;
+    }
+}
